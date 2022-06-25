@@ -1,0 +1,88 @@
+.wishlist-wrapper {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  margin: 7em auto;
+  padding: 2em;
+}
+.wishlist-container {
+  width: 100%;
+}
+.wishlist-header {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.wishlist-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+.wishlist-col {
+  max-width: 270px;
+  border: 1.35px solid #e4e4e4;
+}
+.wishlist-card-container {
+  position: relative;
+}
+.wishlist-card-row img {
+  width: inherit;
+}
+.wishlist-card-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+.wishlist-card-row:nth-child(1) {
+  padding: 1em;
+}
+.wishlist-card-price-and-quantity {
+  color: #1a1a1a;
+
+  opacity: 0.5;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.9789px;
+}
+.proceed-to-checkout-btn-text-container.contain-wishlist {
+  flex: 1;
+}
+.checkout-place-order-wrapper.contain-wishlist {
+  width: 100%;
+}
+.removeCard-from-wishlist-icon img {
+  width: 30px;
+  position: absolute;
+  top: -3%;
+  right: -5%;
+  background: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .wishlist-wrapper {
+    padding: 1em;
+  }
+  .removeCard-from-wishlist-icon img {
+    top: 1%;
+    right: 1%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wishlist-col {
+    max-width: 150px;
+  }
+  .wishlist-card-container p {
+    font-size: 10px;
+  }
+  .wishlist-card-row img {
+    width: 60px;
+  }
+  .proceed-to-checkout-btn-img-container img {
+    width: 20px;
+  }
+}

@@ -1,0 +1,137 @@
+.order-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.order-detail-col {
+  flex: 0 0 50%;
+  max-width: 550px;
+}
+.order-detail-item-header-bar {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(235, 3, 105);
+  padding: 1em;
+}
+.order-detail-item-header-bar-col p:nth-child(1) {
+  color: rgba(255, 255, 255, 0.6);
+}
+.order-detail-item-header-bar-col p:nth-child(2) {
+  color: rgba(255, 255, 255, 1);
+}
+.order-detail-item-product-description {
+  padding: 1em;
+}
+.order-detail-item-product-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-top: 1px solid #dfdcdc;
+}
+.order-detail-col1-row1 {
+  background-color: #fff;
+  border: 1px solid #dfdcdc;
+  margin-bottom: 1em;
+}
+
+.order-detail-item-product-actions-col img {
+  width: 30px;
+}
+
+.order-detail-item-product-actions-col {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.order-detail-col1-row2 {
+  background-color: #fff;
+  border: 1px solid #dfdcdc;
+}
+
+.products-ordered-container-row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+}
+.products-ordered-description {
+  display: flex;
+}
+.products-ordered-description p:nth-child(1) {
+  padding-right: 1em;
+  border-right: 1px solid #dfdcdc;
+}
+
+.products-ordered-description p:nth-child(2) {
+  padding: 0 1em;
+  border-right: 1px solid #dfdcdc;
+}
+
+.products-ordered-description p:nth-child(3) {
+  padding: 0 1em;
+}
+
+.products-ordered-container-col1 img {
+  width: 40px;
+  height: 110px;
+}
+
+.products-ordered-header {
+  padding: 1em;
+}
+.products-ordered-container-col1 {
+  border: 1.35px solid #e4e4e4;
+  padding: 0.5em;
+}
+
+.products-ordered-container-col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.products-ordered-container-row:not(:nth-child(1)) {
+  border-top: 1px solid #dfdcdc;
+}
+.order-detail-col2-row1 {
+  display: flex;
+  padding: 2em;
+  background: #fff;
+  gap: 5em;
+}
+.order-detail-col2-row1-col {
+  width: 50%;
+}
+.order-summary-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.order-summary-row-wrapper {
+  background: #fff;
+  margin-top: 1em;
+  padding: 2em;
+}
+
+@media screen and (max-width: 767px) {
+  .order-detail-container {
+    font-size: 12px;
+    display: block;
+  }
+  .order-detail-col {
+    flex: inherit;
+    max-width: 100%;
+  }
+  .livon-account-component-wrapper {
+    padding: 0;
+  }
+  .order-detail-col2-row1 {
+    margin-top: 1em;
+    border: 1px solid #dfdcdc;
+  }
+  .order-summary-row-wrapper {
+    border: 1px solid #dfdcdc;
+  }
+}

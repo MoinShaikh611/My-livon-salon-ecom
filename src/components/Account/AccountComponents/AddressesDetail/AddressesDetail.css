@@ -1,0 +1,50 @@
+p.addresses-detail-header-wrapper a {
+  color: #8d8d8d;
+}
+#states {
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #dfdcdc;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../../../assets/images/icons/select-option-arrow.png");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+.setAsDefaultProfileDetail-img {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  object-fit: none;
+  border-radius: 50%;
+}
+.setAsDefaultProfileDetail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: #8d8d8d;
+}
+.aic {
+  align-items: center;
+}
+.cancel-btn-address-detail {
+  background-color: transparent;
+}
+@media screen and (max-width: 767px) {
+  .aic {
+    align-items: normal;
+  }
+  .cancel-btn-address-detail {
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+  }
+}

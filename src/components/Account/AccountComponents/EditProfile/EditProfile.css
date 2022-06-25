@@ -1,0 +1,41 @@
+.edit-profile-row {
+  display: flex;
+  gap: 2em;
+  width: 80%;
+}
+.edit-profile-form {
+  margin: 1em 0;
+  width: 100%;
+}
+.edit-profile-col {
+  width: 100%;
+}
+.input-email {
+  display: flex;
+  flex-direction: column;
+}
+.save-change-button-wrapper {
+  margin: 1em 0;
+}
+.account-components-btn {
+  color: #fff;
+  background-color: #ea0067;
+  padding: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .edit-profile-row {
+    gap: 1em;
+    width: 100%;
+    flex-direction: column;
+  }
+  .edit-profile-form {
+    margin: 0;
+  }
+  .edit-profile-header {
+    margin-bottom: 1em;
+  }
+  .account-components-btn {
+    width: 100%;
+  }
+}

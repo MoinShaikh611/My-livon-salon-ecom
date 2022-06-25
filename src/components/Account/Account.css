@@ -1,0 +1,39 @@
+.livon-account-container {
+  display: flex;
+  height: 100%;
+}
+
+.livon-account-component-wrapper {
+  padding: 4em;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  background: #f6f6f8;
+  height: 100%;
+  padding-top: 10em;
+}
+.livon-account-component-container {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.hide-desk {
+  display: none !important;
+}
+.edit-profile-header-img {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .livon-account-component-wrapper {
+    background-color: #fff;
+  }
+
+  .hide-desk {
+    display: block !important;
+  }
+
+  .livon-account-component-container {
+    overflow-y: inherit;
+    overflow-x: inherit;
+  }
+}

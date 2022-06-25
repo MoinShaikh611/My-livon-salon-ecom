@@ -1,0 +1,88 @@
+.addresses-header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5em;
+  align-items: center;
+}
+.addresses-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.addresses-list-item-wrapper {
+  flex: 0 0 45%;
+  max-width: 450px;
+}
+.addresses-list-item-container {
+  background: #fff;
+  padding: 2em;
+}
+.addresses-list-item-action {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+.addresses-list-item-action img {
+  width: 25px;
+}
+
+.addresses-list-item-useractions {
+  display: flex;
+  gap: 1em;
+}
+.addresses-list-item-action p {
+  font-size: 13px;
+  color: #312229;
+  opacity: 0.5;
+}
+
+.addresses-list-item-username,
+.addresses-list-item-userphone,
+.addresses-list-item-useraddress {
+  margin-bottom: 0.5em;
+}
+.addresses-list-item-userphone {
+  color: #4282e2;
+  cursor: pointer;
+}
+.addresses-list-item-useraddress {
+  color: #312229;
+  opacity: 0.5;
+}
+.addresses-header-button button {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 12px 2em;
+}
+.edit-profile-header {
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 767px) {
+  .addresses-list-container {
+    display: block;
+  }
+  .addresses-list-item-wrapper {
+    border: 1px solid #dfdcdc;
+    margin: 1em 0;
+    max-width: 100%;
+  }
+  .livon-account-component-wrapper {
+    background: #fff;
+  }
+  .addresses-header-button button {
+    width: 100%;
+    margin: 1em 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .addresses-header-container {
+    display: flex;
+    justify-content: inherit;
+    margin-bottom: 2.5em;
+    gap: 0.5em;
+    align-items: center;
+  }
+}

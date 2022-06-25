@@ -1,0 +1,238 @@
+@font-face {
+  font-family: redRock;
+  src: url(../../../assets/fonts/RedRock.woff);
+}
+@font-face {
+  font-family: gotham;
+  src: url(../../../assets/fonts/GothamPro-Bold.ttf);
+}
+@font-face {
+  font-family: gothamBlack;
+  src: url(../../../assets/fonts/GothamPro-Light.ttf);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+.login-wrapper {
+  margin: 8em 0;
+}
+.login-form {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+input {
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #dfdcdc;
+  border-radius: 4px;
+  resize: vertical;
+}
+button {
+  outline: none;
+  border: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+label {
+  color: #8d8d8d;
+  font-family: gothamBlack;
+  font-weight: bold;
+}
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-d-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.flex-d-row {
+  display: flex;
+  flex-direction: row;
+}
+.orSigninWith {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.orSigninWith .horizontal-side-line {
+  opacity: 0.1;
+  background-color: #000000;
+  width: 100px;
+  height: 1px;
+  flex: 1;
+}
+.forgot-password-and-signup-link {
+  font-family: gotham;
+  justify-content: space-between;
+}
+.forgot-password-and-signup-link a {
+  color: #4282e2 !important;
+}
+.forgot-password-and-signup-link a:hover {
+  color: #4282e2 !important;
+}
+.login-btn-wrapper,
+.login-btn-wrapper button {
+  width: 100%;
+}
+.login-btn-wrapper button {
+  padding: 12px;
+  background: rgba(234, 0, 103, 1);
+  color: #ffffff;
+}
+.orSigninWith p {
+  color: rgba(141, 141, 141, 1);
+  margin-bottom: 0 !important;
+}
+
+.login-title {
+  text-align: center;
+  font-family: redRock;
+}
+
+.signInWith-google-facebook-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.signInWith-google-facebook-wrapper button {
+  width: 50%;
+  padding: 12px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: center;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  font-family: inherit !important;
+  padding: 0 !important;
+  opacity: 1 !important;
+}
+.signInWith-google-facebook-wrapper button div {
+  margin-right: 0 !important;
+}
+.signInWith-google-facebook-wrapper button span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+button.kep-login-facebook.metro {
+  /* border: 1px solid black !important; */
+  width: 100% !important;
+  padding: 12px 4em !important;
+  background: #3a559f;
+  border-radius: 3px !important;
+  font-size: 15px;
+  font-weight: 400;
+}
+.signInWith-google-facebook-wrapper button img {
+  width: 20px !important;
+}
+.signInWith-google-facebook-wrapper p {
+  margin: 0 !important;
+}
+.google-button {
+  background: transparent;
+  color: #8d8d8d;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.fb-button {
+  background-color: #3a559f;
+  color: #ffffff;
+  /* border: 1px solid rgba(0, 0, 0, 0.15); */
+}
+
+.login-tabs-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+  border: 0.820288px solid #dfdcdc;
+}
+.login-btn-with-otp,
+.login-btn-with-email {
+  flex: 1;
+  padding: 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-family: gotham;
+}
+
+.login-btn-with-otp.Active,
+.login-btn-with-email.Active {
+  background-color: #e7e7ff;
+}
+
+.login-ribbon {
+  position: absolute;
+  top: 2em;
+  left: -1em;
+  width: 25%;
+}
+
+.footer .footerbox {
+  margin-top: 0;
+}
+
+.hide-mobile-css {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .login-ribbon {
+    display: none;
+  }
+  .login-wrapper {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-tabs-wrapper {
+    border: 0;
+    flex-direction: column;
+  }
+  .hide-mobile-css {
+    display: block;
+  }
+  .login-btn-with-otp,
+  .login-btn-with-email {
+    border: 0.820288px solid #dfdcdc;
+  }
+  .login-tabs-mobile {
+    margin: 0 !important;
+    text-align: center;
+  }
+  .forgot-password-and-signup-link {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .signInWith-google-facebook-wrapper {
+    flex-direction: column;
+  }
+  .signInWith-google-facebook-wrapper button,
+  .signInWith-google-facebook-wrapper button {
+    width: 100%;
+  }
+}
